@@ -1,0 +1,233 @@
+.project-data-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-data-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-data {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+.project-data:hover {
+  transform: translateY(-3px);
+}
+.project-data h3 {
+  font-size: 2rem;
+  color: #90caf9;
+}
+.project-data p {
+  color: #b0bec5;
+  margin-top: 1rem;
+}
+.skills-box {
+  margin-top: 1.5rem;
+}
+.skills-box h5 {
+  color: #81d4fa;
+}
+.required-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.required-skills p {
+  background: #263238;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  color: #80deea;
+  transition: background 0.3s;
+}
+.required-skills p:hover {
+  background: #37474f;
+}
+.budget-box h5 {
+  margin-top: 1rem;
+  color: #80cbc4;
+}
+.budget-box h6 {
+  color: #26a69a;
+}
+
+.project-submissions-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.project-submissions-container h4 {
+  color: #81d4fa;
+  margin-bottom: 1rem;
+}
+.project-submission {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.link-line, .desc-line {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.link-line a {
+  color: #64b5f6;
+  text-decoration: underline;
+}
+.link-line a:hover {
+  color: #42a5f5;
+}
+.desc-line p {
+  margin: 0;
+  color: #b0bec5;
+}
+.status-approved {
+  color: #66bb6a;
+  font-weight: bold;
+}
+.submission-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn-approve, .btn-reject {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-approve {
+  background-color: #43a047;
+  color: #fff;
+}
+.btn-approve:hover {
+  background-color: #388e3c;
+}
+.btn-reject {
+  background-color: #e53935;
+  color: #fff;
+}
+.btn-reject:hover {
+  background-color: #c62828;
+}
+.no-submissions {
+  color: #b0bec5;
+  font-style: italic;
+}
+
+.project-chat-container {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+.project-chat-container h4 {
+  color: #81d4fa;
+  margin-bottom: 1rem;
+}
+.chat-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 0.5rem;
+}
+.chat-messages::-webkit-scrollbar {
+  width: 5px;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 2px;
+}
+.my-message div, .received-message div {
+  max-width: 75%;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease;
+}
+.my-message {
+  display: flex;
+  justify-content: flex-end;
+}
+.my-message div {
+  background: #42a5f5;
+  color: #fff;
+}
+.received-message {
+  display: flex;
+  justify-content: flex-start;
+}
+.received-message div {
+  background: #26a69a;
+  color: #fff;
+}
+.my-message p, .received-message p {
+  margin: 0;
+}
+.my-message h6, .received-message h6 {
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+  opacity: 0.8;
+}
+.chat-input {
+  display: flex;
+  margin-top: auto;
+  border-top: 1px solid #424242;
+  padding-top: 1rem;
+}
+.chat-input input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 2rem 0 0 2rem;
+  background: #2c2c2c;
+  color: #fff;
+  outline: none;
+}
+.chat-input button {
+  background: #42a5f5;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0 2rem 2rem 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.chat-input button:hover {
+  background: #1e88e5;
+}
+.chat-disabled {
+  color: #757575;
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}

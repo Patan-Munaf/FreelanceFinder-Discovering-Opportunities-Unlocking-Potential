@@ -1,0 +1,130 @@
+/* Whole page dark background with subtle gradient */
+.user-applications-page {
+  padding: 3vh 4vw;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.5s ease;
+}
+
+.user-applications-page h3 {
+  font-size: 2rem;
+  margin-bottom: 2vh;
+  color: #e0e0e0;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.user-applications-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2vh 0;
+  max-height: 76vh;
+  overflow-y: auto;
+  backdrop-filter: blur(8px);
+}
+
+/* Glassmorphic Card */
+.user-application {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 2vh 2vw;
+  transition: transform 0.3s ease, background 0.4s ease;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.user-application:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-5px);
+}
+
+/* Divider between halves */
+.user-application-body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: auto;
+  margin: 0 2vw;
+}
+
+/* Halves of card */
+.user-application-half {
+  flex: 1 1 45%;
+  min-width: 250px;
+}
+
+.user-application-half h4 {
+  font-size: 1.3rem;
+  color: #f8f8f8;
+  margin-bottom: 1vh;
+}
+
+.user-application-half p {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+  margin-bottom: 1vh;
+}
+
+.user-application-half h5 {
+  font-size: 1rem;
+  color: #85c1e9;
+  margin-top: 1vh;
+}
+
+.user-application-half h5 b {
+  color: #f0f0f0;
+}
+
+.user-application-half span h5 {
+  font-size: 1.1rem;
+  color: #aed6f1;
+  margin-top: 1vh;
+}
+
+.user-application-half span .application-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5vh;
+}
+
+.user-application-half span .application-skills p {
+  color: #48c9b0;
+  border: 1px solid #48c9b0;
+  padding: 6px 12px;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  background-color: rgba(72, 201, 176, 0.1);
+  transition: background 0.3s ease;
+}
+
+.user-application-half span .application-skills p:hover {
+  background-color: rgba(72, 201, 176, 0.3);
+}
+
+.user-application-half h6 {
+  font-size: 1rem;
+  margin-top: 1vh;
+  color: #f8f8f8;
+}
+
+.user-application-half h6 b {
+  color: #f5b041;
+}
+
+.user-application hr {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  margin-top: 2vh;
+}
