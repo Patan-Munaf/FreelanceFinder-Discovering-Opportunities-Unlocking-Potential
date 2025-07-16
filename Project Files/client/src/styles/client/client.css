@@ -1,0 +1,145 @@
+:root {
+  --primary-bg: #121212;
+  --card-bg: #1e1e1e;
+  --accent: #4db8ff;
+  --accent2: #85d0ff;
+  --text: #e0e0e0;
+  --subtext: #aaaaaa;
+  --border: #333;
+}
+
+.client-projects-page {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  padding: 4vh 2vw;
+}
+
+.client-projects-list {
+  width: 90%;
+  max-width: 900px;
+  background-color: var(--card-bg);
+  border-radius: 0.8rem;
+  padding: 3vh 2vw;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  overflow-y: auto;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.client-projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-projects-header h2 {
+  margin: 0;
+  color: var(--accent);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.client-projects-header select {
+  background-color: var(--primary-bg);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  padding: 8px 12px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.client-projects-header select:hover {
+  border-color: var(--accent2);
+  background-color: #181818;
+}
+
+.client-projects-list hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2vh 0;
+}
+
+.listed-project {
+  background-color: #181818;
+  margin-bottom: 2vh;
+  border-radius: 0.6rem;
+  padding: 2vh 2vw;
+  border: 1px solid #222;
+  color: var(--text);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideFadeIn 0.5s forwards;
+}
+
+.listed-project:hover {
+  background-color: #222;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(77,184,255,0.2);
+}
+
+.listed-project-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+
+.listed-project-head h3 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.listed-project-head p {
+  color: var(--subtext);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.listed-project h5 {
+  margin: 0.5vh 0;
+  color: var(--accent2);
+  font-size: 0.95rem;
+}
+
+.listed-project p {
+  color: var(--subtext);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.listed-project .bids-data {
+  display: flex;
+  margin-top: 2vh;
+}
+
+.listed-project .bids-data h6 {
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,72 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0 2vw;
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand */
+.navbar h3 {
+  color: #5bc0be;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar h3:hover {
+  color: #3a506b;
+}
+
+/* Options Container */
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Link Styles */
+.nav-options p {
+  margin: 0;
+  padding: 8px 16px;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-options p:hover {
+  background-color: rgba(91, 192, 190, 0.15);
+  color: #5bc0be;
+}
+
+/* Logout Button Style */
+.logout-button {
+  padding: 8px 18px;
+  background-color: #5bc0be;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #3a506b;
+  transform: scale(1.05);
+}

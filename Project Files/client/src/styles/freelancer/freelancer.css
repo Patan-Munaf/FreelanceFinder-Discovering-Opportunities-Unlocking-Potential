@@ -1,0 +1,163 @@
+/* Freelancer main page container */
+.freelancer-home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4vh 5vw;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cards area */
+.home-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.home-card {
+  flex: 1 1 20%;
+  min-width: 220px;
+  max-width: 260px;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.home-card h4 {
+  font-size: 1.2rem;
+  color: #f0f6fc;
+  margin-bottom: 0.5rem;
+}
+
+.home-card p {
+  font-size: 1rem;
+  color: #8b949e;
+  margin-bottom: 1rem;
+}
+
+.home-card button {
+  padding: 0.6rem 1.5rem;
+  border: 1.5px solid #58a6ff;
+  color: #58a6ff;
+  background-color: transparent;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-card button:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* Freelancer details area */
+.freelancer-details {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
+}
+
+.freelancer-details:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.freelancer-details-data,
+.freelancer-details-update {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.freelancer-details-data span h4,
+.freelancer-details-update h4 {
+  color: #f0f6fc;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.freelancer-details-data span p {
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+.freelancer-details-data .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.freelancer-details-data .skill {
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+  background-color: transparent;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.freelancer-details-data .skill:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* Update section inputs */
+.freelancer-details-update input,
+.freelancer-details-update textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #c9d1d9;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.freelancer-details-update input:focus,
+.freelancer-details-update textarea:focus {
+  border-color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.05);
+  outline: none;
+}
+
+.freelancer-details-update textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Update button */
+.freelancer-details button {
+  align-self: flex-start;
+  padding: 0.6rem 1.5rem;
+  border: 1.5px solid #58a6ff;
+  color: #58a6ff;
+  background-color: transparent;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.freelancer-details button:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
