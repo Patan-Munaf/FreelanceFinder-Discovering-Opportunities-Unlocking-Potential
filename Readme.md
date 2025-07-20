@@ -46,6 +46,7 @@ This platform allows Clients to post projects, Freelancers to bid and work on th
 Make sure MongoDB is running locally or through MongoDB Atlas.
 
 🙌 **Credits**
+
 Developed with ❤️ by Munaf Patan
 
 
